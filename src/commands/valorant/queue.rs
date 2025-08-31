@@ -1,0 +1,1 @@
+// for automatic hosting, map picker/voter/randomizer

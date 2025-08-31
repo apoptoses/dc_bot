@@ -1,0 +1,1 @@
+// Displays the guild's member count.

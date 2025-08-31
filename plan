@@ -1,0 +1,503 @@
+
+Valorant Leaderboard
+1v1 Data
+custom_match second board with unique/impressive player accomplishments that match. Possibly multiple notable default achievements and random picker.
+Set up a 1/2/3/4/5/ queue global/server system.
+Assign puuid to user id of a discord user.
+Tracker Score https://tracker.gg/valorant/articles/tracker-score-our-new-performance-rating
+    0-299 D - 300-474 C - 475-649 B - 650-824 A - 825-1000 S
+    Round Win % + KAST (Percent of rounds where you got a kill, assist, survived, or traded) + ACS + DD/Round (Damage dealt - Damage recieved, average over Rounds played
+Update the custom_match command to send a embed of match data when first match id is stored and edit embed with another embed when another match id is stored or add a progress bar ( FOR WHEN PROCESSING 2 OR  MORE MATCHES )
+    Add a button to the embed to cycle through the matches stored.
+    Add a button to the embed to delete the match data stored.
+    Add a button to the embed to show more detailed stats of the match.
+    Add a button to the embed to show a map of the match.
+    Add a button to the embed to show a list of players in the match.
+    Add a button to the embed to show a list of agents played in the match.
+    Add a button to the embed to show a list of weapons used in the match.
+    Add a button to the embed to show a list of abilities used in the match.
+    Add a button to the embed to show a list of rounds played in the match.
+    Add a button to the embed to show a list of kills in the match.
+    Add a button to the embed to show a list of deaths in the match.
+    Add a button to the embed to show a list of assists in the match.
+    Add a button to the embed to show a list of headshots in the match.
+    Add a button to the embed to show a list of bodyshots in the match.
+    Add a button to the embed to show a list of legshots in the match.
+    Add a button to the embed to show a list of damage dealt in the match.
+    Add a button to the embed to show a list of damage recieved in the match.
+    Add a button to the embed to show a list of economy stats in the match.
+    Add a button to the embed to show a list of objective stats in the match.
+    Add a button to the embed to show a list of utility stats in the match.
+    Add a button to the embed to show a list of round stats in the match.
+    Add a button to the embed to show a list of player stats in the match.
+
+Add leveling and an economy system and fun commands.
+
+Modify the custom_match command to cache the matches/match data and fetch data from a particular player within the cached matches for specific players.
+
+Logging Commands:
+    Set channel for all types:
+    Remove channel for all types:
+    Mass edit:
+        - Set channel
+        - Remove Channel
+    Applications (Set category channel):
+        - App Add (Set channel)
+        - App Remove (Set channel)
+        - App Command Permission Update (Set channel)
+    Channels (Set category channel):
+        - Channel Create (Set channel)
+        - Channel Delete (Set channel)
+        - Channel Pins Update (Set channel)
+        - Channel Name Update (Set channel)
+        - Channel Topic Update (Set channel)
+        - Channel NSFW Update (Set channel)
+        - Channel Parent Update (Set channel)
+        - Channel Permissions Update (Set channel)
+        - Channel Type Update (Set channel)
+        - Channel Bitrate Update (Set channel)
+        - Channel User Limit Update (Set channel)
+        - Channel Slow Mode Update (Set channel)
+        - Channel RTC Region Update (Set channel)
+        - Channel Video Quality Update (Set channel)
+        - Channel Default Archive Duration Update (Set channel)
+        - Channel Default Thread Slow Mode Update (Set channel)
+        - Channel Default Reaction Emoji Update (Set channel)
+        - Channel Default Sort Order Update (Set channel)
+        - Channel Forum Tags Update (Set channel)
+        - Channel Forum Layout Update (Set channel)
+        - Channel Voice Status Update (Set channel)
+    Discord AutoMod (Set category channel):
+        - Discord AutoMod Rule Create (Set channel)
+        - Discord AutoMod Rule Delete (Set channel)
+        - Discord AutoMod Rule Toggle (Set channel)
+        - Discord AutoMod Rule Name Update (Set channel)
+        - Discord AutoMod Rule Actions Update (Set channel)
+        - Discord AutoMod Rule Content Update (Set channel)
+        - Discord AutoMod Rule Roles update (Set channel)
+        - Discord AutoMod Rule Channels Update (Set channel)
+        - Discord AutoMod Rule Whitelist Update (Set channel)
+    Emojis (Set category channel):
+        - Emoji Create (Set channel)
+        - Emoji Delete (Set channel)
+        - Emoji Name Update (Set channel)
+        - Emoji Roles Update (Set channel)
+    Events (Set category channel):
+        - Event Create (Set channel)
+        - Event Delete (Set channel)
+        - Event Location Update (Set channel)
+        - Event Description Update (Set channel)
+        - Event Name Update (Set channel)
+        - Event Privacy Level Update (Set channel)
+        - Event Start Time Update (Set channel)
+        - Event End Time Update (Set channel)
+        - Event Status Update (Set channel)
+        - Event Image Update (Set channel)
+        - Event User Subscribe (Set channel)
+        - Event User Unsubscribe (Set channel)
+    Invites (Set category channel):
+        - Invite Create (Set channel)
+        - Invite Delete (Set channel)
+        - Invite Post (Set channel)
+    Messages (Set category channel):
+        - Message Delete (Set channel)
+        - Message Bulk Delete (Set channel)
+        - Message Edit (Set channel)
+        - Message Publish (Set channel)
+        - Message Sent Using Command (Set channel
+    Polls (Set category channel):
+        - Poll Creature (Set channel)
+        - Poll Delete (Set channel)
+        - Poll Finalize (Set channel)
+        - Poll Votes Add (Set channel)
+        - Poll Votes Remove (Set channel)
+    Roles (Set category channel):
+        - Role Create (Set channel)
+        - Role Delete (Set channel)
+        - Role Color Update (Set channel
+        - Role Hoist Update (Set channel)
+        - Role Mentionable Update (Set channel)
+        - Role Name Update (Set channel)
+        - Role Permissions Update (Set channel)
+        - Role Icon Update (Set channel)
+    Stage (Set category channel):
+        - Stage Start (Set channel)
+        - Stage End (Set channel)
+        - Stage Topic Update (Set channel)
+        - Stage Privacy Update (Set channel)
+    Server (Set category channel):
+        - Ban Add (Set channel
+        - Ban Remove (Set channel)
+        - User Join (Set channel)
+        - User Leave (Set channel)
+        - User Kick (Set channel)
+        - Member Prune (Set channel)
+        - AFK Channel Update (Set channel)
+        - AFK Timeout Update (Set channel)
+        - Server Banner Update (Set channel)
+        - Message Notifications Update (Set channel)
+        - Server Discovery Splash Update (Set channel)
+        - Server Content Filter Level Update (Set channel)
+        - Server Features Update (Set channel)
+        - Server Icon Update (Set channel)
+        - MFA Level Update (Set channel)
+        - Server Name Update (Set channel)
+        - Server Description Update (Set channel)
+        - Server Owner Update (Set channel)
+        - Partnered Update (Set channel
+        - Server Boost Level Update (Set channel)
+        - Boost Progress Bar Toggle (Set channel)
+        - Public Updates Channel Update (Set channel)
+        - Server Rules Channel Update (Set channel)
+        - Server Splash Update (Set channel)
+        - System Channel Update (Set channel)
+        - Server Vanity Update (Set channel)
+        - Verification Level Update (Set channel)
+        - Verified Update (Set channel)
+        - Server Widget Update (Set channel)
+        - Server Preferred Locale Update (Set channel)
+        - Onboarding Toggle (Set channel)
+        - Onboarding Channels Update (Set channel)
+        - Onboarding Question Add (Set channel)
+        - Onboarding Question Remove (Set channel)
+        - Onboarding Question Update (Set channel)
+    Stickers (Set category channel):
+        - Sticker Create (Set channel)
+        - Sticker Delete (Set channel)
+        - Sticker Name (Set channel)
+        - Sticker Description Update (Set channel)
+        - Sticker Related Emoji Update (Set channel)
+    Soundboard (Set category channel):
+        - Soundboard Sound Upload (Set channel)
+        - Soundboard Sound Name Update (Set channel)
+        - Soundboard Sound Volume Update (Set channel)
+        - Soundboard Sound Emoji Update (Set channel)
+        - Soundboard Sound Delete (Set channel)
+    Threads (Set category channel):
+        - Thread Create (Set channel)
+        - Thread Delete (Set channel)
+        - Thread Name Update (Set channel)
+        - Thread Slow Mode Update (Set channel)
+        - Thread Archive Duration Update (Set channel)
+        - Thread Archive (Set channel)
+        - Thread Unarchive (Set channel)
+        - Thread Lock (Set channel)
+        - Thread Unlock (Set channel)
+    Users (Set category channel):
+        - User Name Update (Set channel)
+        - User Roles Update (Set channel)
+        - User Roles Add (Set channel)
+        - User Roles Remove (Set channel)
+        - User Avatar Update (Set channel)
+        - User Timed Out (Set channel)
+        - User Timeout Removed (Set channel)
+    Voice (Set category channel):
+        - Voice Channel Full (Set channel)
+        - Voice User Join (Set channel)
+        - Voice User Switch (Set channel)
+        - Voice User Leave (Set channel)
+        - Voice User Move (Set channel)
+        - Voice User Kick (Set channel)
+    Webhooks (Set category channel):
+        - Webhook Create (Set channel)
+        - Webhook Avatar Update (Set channel)
+        - Webhook Name Update (Set channel)
+        - Webhook Channel Update (Set channel)
+        - Webhook Delete (Set channel)
+    Moderation (Set category channel):
+        - Auto Moderation (Set channel)
+        - Ban Add (Set channel)
+        - Ban Remove (Set channel)
+        - Case Delete (Set channel)
+        - Case Update (Set channel)
+        - Kick Add (Set channel)
+        - Kick Remove (Set channel)
+        - Mute Add (Set channel)
+        - Mute Remove (Set channel)
+        - Warn Add (Set channel)
+        - Warn Remove (Set channel)
+        - Report Create (Set channel)
+        - Reports Ignore (Set channel)
+        - Reports Accept (Set channel)
+        - User Note Add (Set channel)
+        - User Note Remove (Set channel)
+
+
+
+
+
+Social Notifications:
+    Set channel for all types:
+    Remove channel for all types:
+    Mass edit:
+        - Set channel
+        - Remove channel
+    Youtube:
+    #Notifications for published Youtube content.
+        - Subscribe (Set channel)
+            - Videos
+            - Shorts
+            - Streams
+            - Podcasts
+            - Playlists
+            - Community
+            - Store
+        -  Unsubscribe
+    Twitch:
+    #Live updating notifications for Twitch streams.
+        - Follow (Set channel)
+        - Unfollow
+
+
+
+
+
+Moderation:
+    User reports:
+        Slash command:
+            - Name
+        User context command:
+            - Name
+        Message context command:
+            - Name
+        - Message reactions
+        - Reasons
+        - Channel
+        - Ping roles
+        Report Permissions:
+            - Roles allowed
+            - Roles immune
+    Penalty settings:
+    #Include Proof message with report
+        Warn:
+            - Reason
+            - Duration
+            - Actions
+                - Add roles
+                - Remove roles
+                - Set roles
+                - Disconnect from voice
+            - Force reason
+            - Always review
+        Unwarn:
+            - Reason
+            - Actions
+                - Add roles
+                - Remove Roles
+                - Set Roles
+            - Force reason
+            - Always review
+        Mute:
+            - Reason
+            - Duration
+            - Actions
+                - Add roles
+                - Remove roles
+                - Set roles
+                - Disconnect from voice
+            - Force reason
+            - Allow multiple mute cases
+            - Always review
+            - Link with timeouts
+        Unmute:
+            - Reason
+            - Actions
+                - Add roles
+                - Remove roles
+                - Set roles
+            - Force reason
+            - Always review
+            - Link with timeouts
+        Kick:
+            - Reason
+            - Internal reason
+                - ${authorid}
+                - ${authortag}
+                - ${reason}
+                - ${currentdate}
+            - Force Reason
+            - Always review
+        Ban:
+            - Reason
+            - Internal reason
+                - ${authorid}
+                - ${authortag}
+                - ${reason}
+                - ${currentdate}
+            - Duration
+            - Actions
+                - Delete messages
+                    - Days (x)
+            - Force reason
+            - Always review
+        Unban:
+            - Reason
+            - Internal reason
+                - ${authorid}
+                - ${authortag}
+                - ${reason}
+                - ${currentdate}
+            - Force reason
+            - Always review
+        User notifications:
+        #Direct messages
+            - Notify users on punishment
+            - Notify users on unpunishment
+        Channel locking:
+            - Ignored roles
+            - Channels to lock
+        Immune roles:
+            Global:
+            Bans:
+            Kicks:
+            Mutes:
+            Warns: 
+    - Reply to message
+    - Confirm punishment when recent case exists
+        - Seconds
+        - Minutes
+        - Hours
+        - Days
+
+
+
+
+
+Auto Moderation:
+    Set channel for all types:
+    Remove channel for all types:
+    Mass edit:
+        - Set channel
+        - Remove Channel
+    Words:
+        Conditions:
+            - More or Exactly
+            - Exactly
+            - Message
+            - Seconds Limit
+            - Minutes Limit
+            - Hours Limit
+            - Days Limit
+        Manage channels:
+        Group:
+            - Word
+                - Ignore capitalization
+                - Require spaces
+            - Roles
+                - Excluded
+                - Included
+        Block messages:
+            - Display message
+        Alert message:
+            - Set channel
+            - Remove Channel
+            
+    Links: continue
+    Invites: continue
+    Polls: continue
+    Warns: continue
+    Special channels: continue
+
+    Spam:
+        Conditions:
+            - More or Exactly
+            - Exactly
+            - Messages Limit
+            - Seconds Limit
+            - Minutes Limit
+            - Hours Limit
+            - Days Limit
+    Mentions:
+        Conditions:
+            - More or Exactly
+            - Exactly
+            - Mentions Limit
+            - Seconds Limit
+            - Minutes Limit
+            - Hours Limit
+            - Days Limit
+    Attachments:
+        Conditions:
+            - More or Exactly
+            - Exactly
+            - Attachments Limit
+            - Seconds Limit
+            - Minutes Limit
+            - Hours Limit
+            - Days Limit
+    Emojis:
+        Conditions:
+            - More or Exactly
+            - Exactly
+            - Emojis Limit
+            - Seconds Limit
+            - Minutes Limit
+            - Hours Limit
+            - Days Limit
+    Message Lines:
+        Conditions:
+            - More or Exactly
+            - Exactly
+            - Lines Limit
+            - Seconds Limit
+            - Minutes Limit
+            - Hours Limit
+            - Days Limit
+    Capitalization:
+        Conditions:
+            - More or Exactly
+            - Exactly
+            - Capitalized % Limit
+            - Characters in the message
+            - Seconds Limit
+            - Minutes Limit
+            - Hours Limit
+            - Days Limit
+    Actions:
+            Delay (s):
+            Manage roles:
+            - Excluded
+            - Included
+            - Roles Add
+            - Roles Remove
+            Delete messages:
+                - Delete all
+                - Delete overflow
+                - Delay (s)
+            Send messages:
+                - Reply to message
+                - Delete after (s)
+                - Delay (s)
+            Report:
+                - Report channel
+                - Report reason
+                - Ping roles
+            DM user:
+                - Delay (s)
+            Moderation:
+                Warn:
+                    - Duration
+                    - Reason
+                    - Send message
+                    - User notify
+                Mute:
+                    - Duration
+                    - Reason
+                    - Send message
+                    - User notify
+                Kick:
+                    - Reason
+                    - Send message
+                    - User notify
+                Ban:
+                    - Duration
+                    - Reason
+                    - Send message
+                    - User notify
+            Add reactions:
+            Add roles:
+                - Delay (s)
+            Remove roles:
+                - Delay (s)
+            Set roles: 
+                - Delay (s)

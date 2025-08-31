@@ -1,0 +1,1 @@
+// Gets information about all roles / a specific role.

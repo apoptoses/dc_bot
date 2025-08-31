@@ -1,0 +1,1 @@
+// Displays a guild's banner.

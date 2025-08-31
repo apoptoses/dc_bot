@@ -1,0 +1,1 @@
+// Gets information about all sticker packs / a specific sticker pack.

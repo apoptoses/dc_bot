@@ -1,0 +1,1 @@
+// Gets information about all emojis / a specific emoji.

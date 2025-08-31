@@ -1,0 +1,29 @@
+# Valorant rank emoji mappings
+# Format: <rank_key_lowercase> <emoji>
+
+iron <:3624valorantiron1:1411185958547755099>
+iron2 <:7351valorantiron2:1411186277646078002>
+iron3 <:1854valorantiron3:1411185835050537071>
+bronze <:4159valorantbronze1:1411185993008152628>
+bronze2 <:4376valorantbronze2:1411186023802601472>
+bronze3 <:4590valorantbronze3:1411186078928470047>
+silver <:6335valorantsilver1:1411186242208665720>
+silver2 <:8138valorantsilver2:1411186290673713264>
+silver3 <:3293valorantsilver3:1411185942504538244>
+gold <:5533valorantgold1:1411186150374375566>
+gold2 <:2060valorantgold2:1411185865643790367>
+gold3 <:3293valorantgold3:1411185924863426611>
+platinum <:4590valorantplatinum1:1411186131114000495>
+platinum2 <:3255valorantplatinum2:1411185902079836180>
+platinum3 <:5816valorantplatinum3:1411186173212233949>
+diamond <:4590valorantdiamond1:1411186106979975198>
+diamond2 <:3939valorantdiamond2:1411185974993748008>
+diamond3 <:6354valorantdiamond3:1411186262479736833>
+ascendant <:4590valorantascendant1:1411186054383534170>
+ascendant2 <:8376valorantascendant2:1411186307471904919>
+ascendant3 <:2309valorantascendant3:1411185884681994450>
+immortal <:1518valorantimmortal1:1411185786531090452>
+immortal2 <:1775valorantimmortal2:1411185820055900200>
+immortal3 <:5979valorantimmortal3:1411186201343430808>
+radiant <:5979valorantradiant:1411186226655924317>
+unranked <:9416valorantunranked:1411184822860386314>

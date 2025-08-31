@@ -1,0 +1,1 @@
+// link valorant account to discord account (unverified)

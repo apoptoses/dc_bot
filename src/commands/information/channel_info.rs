@@ -1,0 +1,1 @@
+// Gets information about all channels / a specific channel.
