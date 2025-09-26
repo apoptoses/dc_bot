@@ -33,8 +33,6 @@ Update the custom_match command to send a embed of match data when first match i
 
 Add leveling and an economy system and fun commands.
 
-Modify the custom_match command to cache the matches/match data and fetch data from a particular player within the cached matches for specific players.
-
 Logging Commands:
     Set channel for all types:
     Remove channel for all types:

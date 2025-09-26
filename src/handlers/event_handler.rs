@@ -1,5 +1,4 @@
 use poise::serenity_prelude as serenity;
-use std::sync::atomic::Ordering;
 use std::time::Duration;
 
 pub async fn handle_event<'a>(
@@ -89,68 +88,6 @@ pub async fn handle_event<'a>(
             println!("{}", table_hline);
             println!("{}", hline);
 
-            // Start YouTube poller once on Ready
-            if !data.youtube_poller_started.swap(true, Ordering::SeqCst) {
-                let http = ctx.http.clone();
-                let schema = data.youtube_schema.clone();
-                let path = data.youtube_schema_path.clone();
-                tokio::spawn(async move {
-                    use tokio::time::{interval, Duration as TokioDuration};
-                    let mut ticker = interval(TokioDuration::from_secs(300)); // every 5 minutes
-                    loop {
-                        ticker.tick().await;
-                        // Snapshot subscriptions
-                        let snapshot = {
-                            let guard = schema.read().await;
-                            guard.clone()
-                        };
-                        for (guild_id, subs) in snapshot.guilds.iter() {
-                            for (key, sub) in subs.iter() {
-                                // Determine if any notification type is enabled
-                                if !(sub.videos || sub.shorts || sub.streams || sub.podcasts || sub.playlists || sub.posts || sub.store || sub.releases) {
-                                    continue;
-                                }
-                                if let Some(feed_url) = crate::commands::social_notifications::youtube::resolve_feed_url(&sub.youtube_channel).await {
-                                    if let Ok(items) = crate::commands::social_notifications::youtube::fetch_latest_uploads(&feed_url, 1).await {
-                                        if let Some((title, link)) = items.get(0) {
-                                            if link.is_empty() { continue; }
-                                            let is_short = link.contains("/shorts/");
-                                            // Basic filter: shorts vs regular videos
-                                            let allowed = if is_short { sub.shorts } else { sub.videos };
-                                            if !allowed { continue; }
-
-                                            let already = snapshot
-                                                .last_notified
-                                                .get(guild_id)
-                                                .and_then(|m| m.get(key))
-                                                .cloned();
-                                            if already.as_deref() != Some(link) {
-                                                let content = format!(
-                                                    "New {} from {}: {}\n{}",
-                                                    if is_short { "short" } else { "video" },
-                                                    sub.youtube_channel,
-                                                    title,
-                                                    link
-                                                );
-                                                let channel_id = serenity::ChannelId::new(sub.notify_channel_id);
-                                                let _ = channel_id.say(&http, content).await;
-
-                                                // Persist last_notified
-                                                {
-                                                    let mut guard = schema.write().await;
-                                                    let map = guard.last_notified.entry(*guild_id).or_default();
-                                                    map.insert(key.clone(), link.clone());
-                                                    let _ = guard.save_to_disk(&path).await;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                });
-            }
         }
         _ => {}
     }

@@ -14,4 +14,6 @@ reqwest = { version = "0.12", default-features = false, features = ["rustls-tls"
 feed-rs = "1.5"
 urlencoding = "2"
 chrono = "0.4"
-bincode = "2.0.1"
+bincode = { version = "2.0.1", features = ["serde"] }
+zstd = "0.13"
+sled = "0.34"
